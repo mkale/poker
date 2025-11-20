@@ -55,7 +55,7 @@ class TournamentRunner:
             level=logging.DEBUG,
             format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
             handlers=[
-                logging.FileHandler(log_filename),
+                logging.FileHandler(log_filename, encoding='utf-8'),
                 logging.StreamHandler()  # Also log to console
             ]
         )
